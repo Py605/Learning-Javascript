@@ -1,0 +1,34 @@
+/* For Table */
+.table{
+    height: 300px;
+    width: 400px;
+    background-color: rgb(218, 213, 213);
+} 
+/* For Caption- (Calculator) */
+caption{
+    background-color: rgb(17, 17, 17);
+    font-weight: bold;
+  color: white;
+}
+/* To make every button of equal size & in middle*/
+.equal{
+    height: 16.6%;
+    width: 25%;
+    margin: auto;
+    text-align: center;
+    text-decoration: double;
+    font-weight: bold;
+}
+/* To have azure color in button  */
+  .color-azure{
+      background-color: azure
+  }
+  /* To have white color in buttons  */
+  .color-white{
+    background-color: white;
+  }
+    /* To have white color in red  */
+  .color-red{
+      background-color: rgb(212, 63, 63);
+  }
+  

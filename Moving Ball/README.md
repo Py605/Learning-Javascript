@@ -1,4 +1,4 @@
-#Moving Ball
+# MovingBall
 Here, is the Preview of Moving Ball, made by HTML, CSS & Javascript. 
 <br>
 <br>

@@ -1,0 +1,30 @@
+body {
+  background-image: url("/assets/iron-man.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+h3{
+  color: aqua;
+  margin-left: 30%;
+}
+button{
+  margin-left: 53%;
+
+}
+body > .container {
+  padding: 30px 15px 0;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+#marvel-container {
+	padding-bottom: 60px;
+}
+.name {
+	margin-top: 10px;
+}

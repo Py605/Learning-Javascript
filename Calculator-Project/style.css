@@ -1,7 +1,14 @@
 * {
+  padding: 0;
   box-sizing: border-box;
+  font-family: 'Quicksand';
+  word-spacing: 2px;
+  font-weight: 600;
 }
 
+body{
+  background-image: linear-gradient( to bottom right, rgba(79,51,176,1.0),rgba(210,53,165));
+}
 :root {
   --border-radius: 5px;
   --border-width: 1px;
@@ -11,40 +18,65 @@
   --red: #c14444;
 }
 
-#calculator {
+.calculator {
+  margin: auto;
+  padding: 10px;
   width: 30%;
   height: 70%;
-  min-width: 300px;
-  min-height: 350px;
-  background-color: var(--light-grey);
-  margin: auto;
+  background-color: rgb(255, 207, 153,0.4);
   border: 2px solid var(--light-grey);
   border-radius: var(--border-radius);
-  padding: 10px;
+  border: 2px solid black;
 }
-
-#calculator h1 {
+.calculator button{
+  margin-left: 38%;
+  border-radius: var(--border-radius);
+  padding: 2px;
+}
+.light{
   background-color: black;
+  color: white;   
+  cursor: pointer;
+}
+.dark-button{
+  background-color: aliceblue;
+  color: black;
+  cursor: pointer;
+}
+h1 {
+  background-color: #2d191e;
+  word-spacing: 14px;
   color: white;
   text-transform: uppercase;
   text-align: center;
-  padding: 10px;
+  padding: 8px;
+  border-radius: var(--border-radius);
+}
+/* To be added in h1 */
+.dark-h1{
+  background-color: rgb(248, 229, 176);
+  color: black;
+}
+.dark-bg{
+  /* To be added in first outer div */
+  background-color: rgb(11, 11, 11,0.8);
+  border: 2px solid white;
 }
 
 #display-container {
-  font-size: 2.5rem;
-  color: var(--blue);
+  margin-bottom: 5px;
   width: 100%;
   height: 20%;
-  min-height: 100px;
-  border-radius: var(--border-radius); 
+  min-height: 80px;
+  color: var(--blue);
   background-color: whitesmoke;
-  /* margin-bottom: 10px; */
+  font-size: 2rem;
+  border-radius: 20%; 
 }
 #previous-display{
   width: 100%;
   height: 50%;
-  min-height: 50px;
+  min-height: 40px;
   display: flex;  
   align-items: flex-end;
   justify-content: flex-end;
@@ -53,7 +85,7 @@
 #current-display{
   width: 100%;
   height: 50%;
-  min-height: 50px;
+  min-height: 40px;
   background-color: rgb(238, 250, 217);
   display: flex;  
   justify-content: flex-end;
@@ -63,7 +95,7 @@
 #buttons-container {
   width: 100%;
   height: 60%;
-  min-height: 300px;
+  min-height: 250px;
   border: var(--border-width) solid var(--light-grey);
   border-radius: var(--border-radius);
   background-color: var(--light-grey);
@@ -73,9 +105,10 @@
 }
 
 .button {
+  border-radius: 20px;
   width: 25%;
   height: 20%;
-  min-height: 60px;
+  min-height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,12 +117,28 @@
   font-size: 1.8rem;
   cursor: pointer;
   transition-duration: 1s;
+  
 }
 
 .button:hover {
   background-color: var(--orange);
+  transform: scale(1.05);
 }
-
+.cancel-button{
+  color: #fc4552;
+  background-color: #ffd5d8;
+}
+.operator{
+  color: #ff29f8;
+  background-color: #ffd0fd;
+}
+.number{
+  /* color: #ff29f8; */
+  background-color: #c3eaff;
+}
+.equal{
+  background-color: #adf9e7;
+}
 .red {
   background-color: var(--red);
   color: white;

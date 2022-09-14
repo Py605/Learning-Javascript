@@ -10,6 +10,7 @@ var flag=true;
 function isOperator(value){
     return value=='+' || value=='-' || value=='*' || value=='/';
 }
+
 for(var i=0;i<buttons.length;i++){
     buttons[i].addEventListener('click',function(){
         var value=this.getAttribute('data-value');
@@ -22,7 +23,7 @@ for(var i=0;i<buttons.length;i++){
             operator=value;
             operand1=parseFloat(text);
             display.textContent="";
-            prev_display.textContent+=operator;
+            prev_display.textContent += " "+ operator+" ";
         }else if(value=='ac'){
             display.textContent="";
             prev_display.textContent="";
@@ -60,3 +61,26 @@ for(var i=0;i<buttons.length;i++){
         }
     });
 }
+
+var whichMode = true;
+var modeButton = document.querySelector('button');
+var h1tag = document.querySelector('h1');
+var calculatorDiv = document.querySelector('main');
+
+modeButton.addEventListener('click',function(){
+    if(whichMode){
+        modeButton.classList.remove('light');
+        modeButton.classList.add('dark-button');
+        h1tag.classList.add('dark-h1');
+        calculatorDiv.classList.add('dark-bg');
+        whichMode = !whichMode;
+    }
+    else{
+        modeButton.classList.add('light');
+        h1tag.classList.remove('dark-h1');
+        calculatorDiv.classList.remove('dark-bg');
+        modeButton.classList.remove('dark-button');
+        whichMode = !whichMode;
+    }
+    
+});
